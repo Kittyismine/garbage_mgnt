@@ -1,0 +1,102 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set background color for the whole page */
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for "Manage Garbage" link */
+a {
+    font-size: 18px;
+    color: #5c6bc0;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #5c6bc0;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Logout button style */
+form button {
+    padding: 12px 25px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c2185b;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #5c6bc0;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}

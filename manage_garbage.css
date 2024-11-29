@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set background color for the whole page */
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the form container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transform: scale(0.95);
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Animation for form appearance */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Style for heading */
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style for the input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for input fields */
+input:focus {
+    border-color: #0288d1;
+    box-shadow: 0 0 5px rgba(2, 136, 209, 0.5);
+    outline: none;
+}
+
+/* Style for the submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0277bd;
+}
+
+/* Style for error messages */
+p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Error message styling */
+p[style*='color:red'] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style for the sign-up link */
+a {
+    color: #0288d1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Sign-up link hover effect */
+a:hover {
+    color: #0277bd;
+}
+
+/* Style for mobile responsiveness */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+    }
+}
